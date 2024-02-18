@@ -11,6 +11,11 @@ export function subtract(a, b) {
  * "export" to the function definition (as seen in the
  * subtract example above)
  */
-function add(a, b) {
+export function add(a, b) {
   return a + b;
+}
+
+export function compare(arr, arr2) {
+  return arr.length === arr2.length;
+
 }
