@@ -28,10 +28,10 @@ export function largest(arr) {
 }
 
 export function zeroest(arr) {
-  current = arr[0];
+  let current = arr[0];
   for (let i = 1; i < arr.length; i++) {
-    if (arr[i] < current)
+    if (arr[i] < current && arr[i] >= 0) 
       current = arr[i];
-    }
-    return current;
+  }
+  return current;
 }
